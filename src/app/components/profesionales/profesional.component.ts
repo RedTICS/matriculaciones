@@ -326,7 +326,7 @@ export class ProfesionalComponent implements OnInit {
 
             }
             if (matcheo) {
-              this.plex.info('info', `El profesiona ${this.profesional.nombre} ${this.profesional.apellido} con el documento
+              this.plex.info('info', `El profesional ${this.profesional.nombre} ${this.profesional.apellido} con el documento
               ${this.profesional.documento} ya se encuentra registrado`);
             } else {
               this._profesionalService.getProfesional({ sexo: this.profesional.sexo, documento: this.profesional.documento })
